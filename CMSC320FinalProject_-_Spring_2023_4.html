@@ -67,7 +67,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'CMSC320FinalProject_-_Spring_2023_3';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'CMSC320FinalProject_-_Spring_2023_4';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -207,7 +207,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/CMSC320FinalProject_-_Spring_2023_3.ipynb" target="_blank"
+      <li><a href="_sources/CMSC320FinalProject_-_Spring_2023_4.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -2519,8 +2519,9 @@ that is returned so that we have a list of the key words.</p>
 <p>For the data we use in the project, we made a .csv file to store the data because the api calls are constantly changing due to the number of people that interact with IMDB, changing the numbers. As you can see, the tables are identical.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">apiData</span> <span class="o">=</span> <span class="n">total</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">apiData</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#create a copy of the api data so that we don&#39;t have to keep running it</span>
+<span class="n">apiData</span> <span class="o">=</span> <span class="n">total</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">apiData</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2670,141 +2671,122 @@ that is returned so that we have a list of the key words.</p>
       <td>[suicide, jealousy, canada, politically incorr...</td>
     </tr>
     <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>2807</th>
-      <td>The King's Man</td>
-      <td>Action, Adventure, Thriller</td>
-      <td>Ralph Fiennes, Gemma Arterton, Rhys Ifans</td>
-      <td>Matthew Vaughn</td>
-      <td>In the early years of the 20th century, the Ki...</td>
-      <td>United Kingdom, United States</td>
-      <td>English, Latin, German, French, Russian</td>
-      <td>6.3</td>
-      <td>$37,176,373</td>
-      <td>156,453</td>
-      <td>44</td>
-      <td>december</td>
-      <td>22.0</td>
-      <td>2021</td>
-      <td>20th Century Studios / Marv Studios / TSG Ente...</td>
-      <td>R</td>
-      <td>100000000.0</td>
-      <td>[london, england, spy, world war i, based on c...</td>
-    </tr>
-    <tr>
-      <th>2808</th>
-      <td>The Tragedy of Macbeth</td>
-      <td>Drama, Mystery, Thriller</td>
-      <td>Denzel Washington, Frances McDormand, Alex Has...</td>
-      <td>Joel Coen</td>
-      <td>A Scottish lord becomes convinced by a trio of...</td>
-      <td>United States</td>
-      <td>English, Persian</td>
-      <td>7.1</td>
-      <td>N/A</td>
-      <td>36,172</td>
-      <td>87</td>
-      <td>december</td>
-      <td>25.0</td>
-      <td>2021</td>
-      <td>Apple TV+ / A24 / IAC Films</td>
-      <td>R</td>
-      <td>0.0</td>
-      <td>[scotland, husband wife relationship, ambition...</td>
-    </tr>
-    <tr>
-      <th>2809</th>
-      <td>A Journal for Jordan</td>
-      <td>Drama</td>
-      <td>Michael B. Jordan, Chanté Adams, Jalon Christian</td>
-      <td>Denzel Washington</td>
-      <td>1st Sgt. Charles Monroe King, before he is kil...</td>
+      <th>5</th>
+      <td>The Dilemma</td>
+      <td>Comedy, Drama</td>
+      <td>Vince Vaughn, Kevin James, Winona Ryder</td>
+      <td>Ron Howard</td>
+      <td>A man discovers that his best friend's wife is...</td>
       <td>United States</td>
       <td>English</td>
-      <td>5.9</td>
-      <td>$6,545,174</td>
-      <td>2,367</td>
-      <td>42</td>
-      <td>december</td>
-      <td>25.0</td>
-      <td>2021</td>
-      <td>Columbia Pictures / Escape Artists / Bron Studios</td>
+      <td>5.3</td>
+      <td>$48,475,290</td>
+      <td>55,332</td>
+      <td>46</td>
+      <td>january</td>
+      <td>14.0</td>
+      <td>2011</td>
+      <td>Universal Pictures / Imagine Entertainment / S...</td>
       <td>PG-13</td>
-      <td>0.0</td>
-      <td>[]</td>
+      <td>70000000.0</td>
+      <td>[adultery, infidelity, bachelor, wife, investi...</td>
     </tr>
     <tr>
-      <th>2810</th>
-      <td>American Underdog</td>
-      <td>Biography, Drama, Sport</td>
-      <td>Zachary Levi, Anna Paquin, Hayden Zaller</td>
-      <td>Andrew Erwin, Jon Erwin</td>
-      <td>The story of NFL MVP and Hall of Fame quarterb...</td>
+      <th>6</th>
+      <td>The Green Hornet</td>
+      <td>Action, Comedy, Crime</td>
+      <td>Seth Rogen, Jay Chou, Christoph Waltz</td>
+      <td>Michel Gondry</td>
+      <td>Following the death of his father, Britt Reid,...</td>
+      <td>United States</td>
+      <td>English, Mandarin</td>
+      <td>5.8</td>
+      <td>$98,780,042</td>
+      <td>162,350</td>
+      <td>39</td>
+      <td>january</td>
+      <td>14.0</td>
+      <td>2011</td>
+      <td>Columbia Pictures / Original Film</td>
+      <td>PG-13</td>
+      <td>120000000.0</td>
+      <td>[bomb, martial arts, assassin, vandalism, nigh...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>No Strings Attached</td>
+      <td>Comedy, Romance</td>
+      <td>Natalie Portman, Ashton Kutcher, Kevin Kline</td>
+      <td>Ivan Reitman</td>
+      <td>A guy and girl try to keep their relationship ...</td>
+      <td>United States, United Kingdom</td>
+      <td>English, Ukrainian</td>
+      <td>6.2</td>
+      <td>$70,662,220</td>
+      <td>236,097</td>
+      <td>50</td>
+      <td>january</td>
+      <td>21.0</td>
+      <td>2011</td>
+      <td>Paramount Pictures / The Montecito Picture Com...</td>
+      <td>R</td>
+      <td>25000000.0</td>
+      <td>[parent child relationship, casual meeting, st...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Open Season 3</td>
+      <td>Animation, Adventure, Comedy</td>
+      <td>Matthew J. Munn, Nika Futterman, Maddie Taylor</td>
+      <td>Cody Cameron</td>
+      <td>Boog's friends rally to bring him home from a ...</td>
+      <td>United States, Canada</td>
+      <td>English</td>
+      <td>5.0</td>
+      <td>N/A</td>
+      <td>12,362</td>
+      <td>N/A</td>
+      <td>january</td>
+      <td>25.0</td>
+      <td>2011</td>
+      <td>Sony Pictures Home Entertainment / Sony Pictur...</td>
+      <td>PG</td>
+      <td>0.0</td>
+      <td>[circus, friendship, deer, bear, look-alike, f...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>The Mechanic</td>
+      <td>Action, Crime, Thriller</td>
+      <td>Jason Statham, Ben Foster, Donald Sutherland</td>
+      <td>Simon West</td>
+      <td>An elite hitman teaches his trade to an appren...</td>
       <td>United States</td>
       <td>English</td>
-      <td>7.1</td>
-      <td>$26,514,814</td>
-      <td>17,228</td>
-      <td>53</td>
-      <td>december</td>
-      <td>25.0</td>
-      <td>2021</td>
-      <td>Lionsgate</td>
-      <td>PG</td>
-      <td>0.0</td>
-      <td>[american football, biography, los angeles, ca...</td>
-    </tr>
-    <tr>
-      <th>2811</th>
-      <td>Memoria</td>
-      <td>Drama, Mystery, Sci-Fi</td>
-      <td>Tilda Swinton, Agnes Brekke, Daniel Giménez Cacho</td>
-      <td>Apichatpong Weerasethakul</td>
-      <td>A woman from Scotland, while traveling in Colo...</td>
-      <td>Colombia, Thailand, France, Germany, Mexico, Q...</td>
-      <td>English, Spanish</td>
       <td>6.5</td>
-      <td>$52,656</td>
-      <td>9,572</td>
-      <td>91</td>
-      <td>december</td>
-      <td>26.0</td>
-      <td>2021</td>
-      <td>Neon</td>
-      <td>PG</td>
-      <td>0.0</td>
-      <td>[atmospheric, colombia, bogota, colombia]</td>
+      <td>$29,121,498</td>
+      <td>164,471</td>
+      <td>49</td>
+      <td>january</td>
+      <td>28.0</td>
+      <td>2011</td>
+      <td>CBS Films</td>
+      <td>R</td>
+      <td>40000000.0</td>
+      <td>[poison, chicago, illinois, prostitute, martia...</td>
     </tr>
   </tbody>
 </table>
-<p>2759 rows × 18 columns</p>
 </div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;roshart.csv&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># read in the csv file of the data</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;fixedData.csv&quot;</span><span class="p">)</span>
+
+<span class="c1">#create a copy for later use</span>
 <span class="n">data2</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">data</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2966,165 +2948,141 @@ that is returned so that we have a list of the key words.</p>
       <td>['suicide', 'jealousy', 'canada', 'politically...</td>
     </tr>
     <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>2746</th>
-      <td>2746</td>
-      <td>2807</td>
-      <td>The King's Man</td>
-      <td>Action, Adventure, Thriller</td>
-      <td>Ralph Fiennes, Gemma Arterton, Rhys Ifans</td>
-      <td>Matthew Vaughn</td>
-      <td>In the early years of the 20th century, the Ki...</td>
-      <td>United Kingdom, United States</td>
-      <td>English, Latin, German, French, Russian</td>
-      <td>6.3</td>
-      <td>$37,176,373</td>
-      <td>156,453</td>
-      <td>44.0</td>
-      <td>december</td>
-      <td>22.0</td>
-      <td>2021</td>
-      <td>20th Century Studios / Marv Studios / TSG Ente...</td>
-      <td>R</td>
-      <td>100000000.0</td>
-      <td>['london, england', 'spy', 'world war i', 'bas...</td>
-    </tr>
-    <tr>
-      <th>2747</th>
-      <td>2747</td>
-      <td>2808</td>
-      <td>The Tragedy of Macbeth</td>
-      <td>Drama, Mystery, Thriller</td>
-      <td>Denzel Washington, Frances McDormand, Alex Has...</td>
-      <td>Joel Coen</td>
-      <td>A Scottish lord becomes convinced by a trio of...</td>
-      <td>United States</td>
-      <td>English, Persian</td>
-      <td>7.1</td>
-      <td>NaN</td>
-      <td>36,172</td>
-      <td>87.0</td>
-      <td>december</td>
-      <td>25.0</td>
-      <td>2021</td>
-      <td>Apple TV+ / A24 / IAC Films</td>
-      <td>R</td>
-      <td>0.0</td>
-      <td>['scotland', 'husband wife relationship', 'amb...</td>
-    </tr>
-    <tr>
-      <th>2748</th>
-      <td>2748</td>
-      <td>2809</td>
-      <td>A Journal for Jordan</td>
-      <td>Drama</td>
-      <td>Michael B. Jordan, Chanté Adams, Jalon Christian</td>
-      <td>Denzel Washington</td>
-      <td>1st Sgt. Charles Monroe King, before he is kil...</td>
+      <th>5</th>
+      <td>5</td>
+      <td>5</td>
+      <td>The Dilemma</td>
+      <td>Comedy, Drama</td>
+      <td>Vince Vaughn, Kevin James, Winona Ryder</td>
+      <td>Ron Howard</td>
+      <td>A man discovers that his best friend's wife is...</td>
       <td>United States</td>
       <td>English</td>
-      <td>5.9</td>
-      <td>$6,545,174</td>
-      <td>2,367</td>
-      <td>42.0</td>
-      <td>december</td>
-      <td>25.0</td>
-      <td>2021</td>
-      <td>Columbia Pictures / Escape Artists / Bron Studios</td>
+      <td>5.3</td>
+      <td>$48,475,290</td>
+      <td>55,332</td>
+      <td>46.0</td>
+      <td>january</td>
+      <td>14.0</td>
+      <td>2011</td>
+      <td>Universal Pictures / Imagine Entertainment / S...</td>
       <td>PG-13</td>
-      <td>0.0</td>
-      <td>[]</td>
+      <td>70000000.0</td>
+      <td>['adultery', 'infidelity', 'bachelor', 'wife',...</td>
     </tr>
     <tr>
-      <th>2749</th>
-      <td>2749</td>
-      <td>2810</td>
-      <td>American Underdog</td>
-      <td>Biography, Drama, Sport</td>
-      <td>Zachary Levi, Anna Paquin, Hayden Zaller</td>
-      <td>Andrew Erwin, Jon Erwin</td>
-      <td>The story of NFL MVP and Hall of Fame quarterb...</td>
+      <th>6</th>
+      <td>6</td>
+      <td>6</td>
+      <td>The Green Hornet</td>
+      <td>Action, Comedy, Crime</td>
+      <td>Seth Rogen, Jay Chou, Christoph Waltz</td>
+      <td>Michel Gondry</td>
+      <td>Following the death of his father, Britt Reid,...</td>
+      <td>United States</td>
+      <td>English, Mandarin</td>
+      <td>5.8</td>
+      <td>$98,780,042</td>
+      <td>162,350</td>
+      <td>39.0</td>
+      <td>january</td>
+      <td>14.0</td>
+      <td>2011</td>
+      <td>Columbia Pictures / Original Film</td>
+      <td>PG-13</td>
+      <td>120000000.0</td>
+      <td>['bomb', 'martial arts', 'assassin', 'vandalis...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>7</td>
+      <td>No Strings Attached</td>
+      <td>Comedy, Romance</td>
+      <td>Natalie Portman, Ashton Kutcher, Kevin Kline</td>
+      <td>Ivan Reitman</td>
+      <td>A guy and girl try to keep their relationship ...</td>
+      <td>United States, United Kingdom</td>
+      <td>English, Ukrainian</td>
+      <td>6.2</td>
+      <td>$70,662,220</td>
+      <td>236,097</td>
+      <td>50.0</td>
+      <td>january</td>
+      <td>21.0</td>
+      <td>2011</td>
+      <td>Paramount Pictures / The Montecito Picture Com...</td>
+      <td>R</td>
+      <td>25000000.0</td>
+      <td>['parent child relationship', 'casual meeting'...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>8</td>
+      <td>Open Season 3</td>
+      <td>Animation, Adventure, Comedy</td>
+      <td>Matthew J. Munn, Nika Futterman, Maddie Taylor</td>
+      <td>Cody Cameron</td>
+      <td>Boog's friends rally to bring him home from a ...</td>
+      <td>United States, Canada</td>
+      <td>English</td>
+      <td>5.0</td>
+      <td>NaN</td>
+      <td>12,362</td>
+      <td>NaN</td>
+      <td>january</td>
+      <td>25.0</td>
+      <td>2011</td>
+      <td>Sony Pictures Home Entertainment / Sony Pictur...</td>
+      <td>PG</td>
+      <td>0.0</td>
+      <td>['circus', 'friendship', 'deer', 'bear', 'look...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>9</td>
+      <td>9</td>
+      <td>The Mechanic</td>
+      <td>Action, Crime, Thriller</td>
+      <td>Jason Statham, Ben Foster, Donald Sutherland</td>
+      <td>Simon West</td>
+      <td>An elite hitman teaches his trade to an appren...</td>
       <td>United States</td>
       <td>English</td>
-      <td>7.1</td>
-      <td>$26,514,814</td>
-      <td>17,228</td>
-      <td>53.0</td>
-      <td>december</td>
-      <td>25.0</td>
-      <td>2021</td>
-      <td>Lionsgate</td>
-      <td>PG</td>
-      <td>0.0</td>
-      <td>['american football', 'biography', 'los angele...</td>
-    </tr>
-    <tr>
-      <th>2750</th>
-      <td>2750</td>
-      <td>2811</td>
-      <td>Memoria</td>
-      <td>Drama, Mystery, Sci-Fi</td>
-      <td>Tilda Swinton, Agnes Brekke, Daniel Giménez Cacho</td>
-      <td>Apichatpong Weerasethakul</td>
-      <td>A woman from Scotland, while traveling in Colo...</td>
-      <td>Colombia, Thailand, France, Germany, Mexico, Q...</td>
-      <td>English, Spanish</td>
       <td>6.5</td>
-      <td>$52,656</td>
-      <td>9,572</td>
-      <td>91.0</td>
-      <td>december</td>
-      <td>26.0</td>
-      <td>2021</td>
-      <td>Neon</td>
-      <td>PG</td>
-      <td>0.0</td>
-      <td>['atmospheric', 'colombia', 'bogota, colombia']</td>
+      <td>$29,121,498</td>
+      <td>164,471</td>
+      <td>49.0</td>
+      <td>january</td>
+      <td>28.0</td>
+      <td>2011</td>
+      <td>CBS Films</td>
+      <td>R</td>
+      <td>40000000.0</td>
+      <td>['poison', 'chicago, illinois', 'prostitute', ...</td>
     </tr>
   </tbody>
 </table>
-<p>2751 rows × 20 columns</p>
 </div></div></div>
 </div>
 <p><b>Processing Box Office and Month Columns</b></p>
 <p>In this raw data from the API, the BoxOffice and imdbVotes columns are represented as strings. Additionally, the BoxOffice columns are prepended with a $ sign and have commas indicating thousands of dollars. We remove these symbols and convert both these columns into floats, as we will be applying mathematical functions to them later. Additionally, the months are listed in word format (ie January, Feburary, ..) rather than in numerical format (ie 1,2,3…). We convert these strings to numbers using the <a class="reference external" href="https://docs.python.org/3/library/datetime.htmldatetime">datetime import</a>, mapping January → 1, Feburary → 2, and so on.</p>
-<p><b>Creating Profit and Hit Column</b></p>
-<p>As stated above, we define a hit movie as (BOR - BoF) &gt; mean(BOR-BoF). To make the “hit” column of the dataframe, we subtract the budget from the box office to calculate the profit and classify a movie as a “hit” (giving it a score of 1) if it is higher than the average profit of all movies, and a “flop” (giving it a score of 0) if it is lower.</p>
+<p><b>Creating Hit Column</b></p>
+<p>In addition to the dataframe columns we have, we add a new column called “hit.” This column denotes movies as a hit (with a 1 in the column) if the imdbRating for that movie is &gt; 6.5 or a non-hit (with a 0 in the column) if the imdbRating for that movie is &lt; 6.5. We decided on using 6.5 as our hit differentiator, as that is the average imdbRating for all the movies in the dataframe. This coulmn will be used later on for our classification model!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<span class="c1">#data[&quot;Title&quot;].isnull()</span>
+<span class="c1">#drop NA columns</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Rated&quot;</span><span class="p">])</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;BoxOffice&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">)]</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;Budget&quot;</span><span class="p">]</span> <span class="o">!=</span> <span class="mf">0.0</span><span class="p">]</span> 
 
+<span class="c1">#change the formatting of the Box office and imdb votes columns to remove the comma and dollar sign </span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;imdbRating&quot;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 <span class="n">data</span><span class="p">[</span><span class="s2">&quot;BoxOffice&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;BoxOffice&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;$&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">data</span><span class="p">[</span><span class="s2">&quot;BoxOffice&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;BoxOffice&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">))</span>
 <span class="n">data</span><span class="p">[</span><span class="s2">&quot;imdbVotes&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;imdbVotes&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">))</span>
-<span class="c1">#data = data.drop(&#39;Unnamed: 0&#39;, axis = 1)</span>
 
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s2">&quot;BoxOffice&quot;</span><span class="p">:</span><span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s2">&quot;imdbVotes&quot;</span><span class="p">:</span><span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s2">&quot;imdbRating&quot;</span><span class="p">:</span><span class="s1">&#39;float&#39;</span> <span class="p">})</span>
 <span class="n">data</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;%B&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
@@ -3139,7 +3097,8 @@ that is returned so that we have a list of the key words.</p>
 <p>First, it would be interesting to see the box office of movies at different months throughout the year. It is generally known that the summer months and the november-december are considered the <a class="reference external" href="https://runpee.com/wide-release-movie-count-by-month/#:~:text=You%20can%20see%20that%20April,movies%20released%20during%20those%20months.">best time</a> to release movies as the audience is the largest during this time.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">month</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="s1">&#39;BoxOffice&#39;</span><span class="p">]]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#select the month and box office columns</span>
+<span class="n">month</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="s1">&#39;BoxOffice&#39;</span><span class="p">]]</span>
 <span class="n">month</span>
 </pre></div>
 </div>
@@ -3230,7 +3189,8 @@ that is returned so that we have a list of the key words.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">month</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;month&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#groupby the month to get unique months and plot the box office for each month</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">month</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;month&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 <span class="n">m</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Average Box Office by Month&#39;</span><span class="p">)</span>
 <span class="n">m</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Month&#39;</span><span class="p">)</span>
 <span class="n">m</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Box Office&#39;</span><span class="p">)</span>
@@ -3247,7 +3207,8 @@ that is returned so that we have a list of the key words.</p>
 <p>As we can see, we got the expected results. The summer months and the end of the year are the best months for box office. We now have one component that contributes to the success of a movie. Now, lets take a look at the year and how it relates to box office success.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">yearData</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;BoxOffice&#39;</span><span class="p">]]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#group by year to find out if there is a correlation between year and box office</span>
+<span class="n">yearData</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;BoxOffice&#39;</span><span class="p">]]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">yearData</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;year&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 <span class="n">y</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Average Box Office by Year&#39;</span><span class="p">)</span>
 <span class="n">y</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">)</span>
@@ -3265,20 +3226,21 @@ that is returned so that we have a list of the key words.</p>
 <p>This graph is not too surprising, but there is clearly an effect of the pandemic on movies where box office earnings have plummeted. Other than this, box office earnings have gone up every year. Now, lets look at the total profit and how it changes based on month.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Profit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;BoxOffice&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Budget&#39;</span><span class="p">]</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#plots the profit per month</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;Profit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;BoxOffice&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Budget&#39;</span><span class="p">]</span> 
 <span class="n">monthlyProfit</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="s1">&#39;Profit&#39;</span><span class="p">]]</span>
 <span class="n">monthlyProfit</span> <span class="o">=</span> <span class="n">monthlyProfit</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;month&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 <span class="n">monthlyProfit</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Average Profit by Month&#39;</span><span class="p">)</span>
 <span class="n">monthlyProfit</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Month&#39;</span><span class="p">)</span>
-<span class="n">monthlyProfit</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Box Office&#39;</span><span class="p">)</span>
+<span class="n">monthlyProfit</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Profit&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Box Office&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Profit&#39;)
 </pre></div>
 </div>
-<img alt="_images/7dfd34c2ec62c43220beff935fd23413939e45b6aa11fe2b1e33a5098c45b3c4.png" src="_images/7dfd34c2ec62c43220beff935fd23413939e45b6aa11fe2b1e33a5098c45b3c4.png" />
+<img alt="_images/be9f061fc532f1e576f7a3d3d460c744ea2124361a7f6d8dbd8979f3e88514c7.png" src="_images/be9f061fc532f1e576f7a3d3d460c744ea2124361a7f6d8dbd8979f3e88514c7.png" />
 </div>
 </div>
 <p>It seems like the profit is dependent on month as well, as this graph’s peaks are similar to the box office graph. A month feature would be interesting to look at to calculate whether a movie will be a hit. Another thing to analyze could be the relation between the box office and the aggregate number of imdb votes on the movie.</p>
@@ -3286,10 +3248,12 @@ that is returned so that we have a list of the key words.</p>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
+<span class="c1">#create subplots</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">rateData</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">&#39;Rated&#39;</span><span class="p">,</span> <span class="s1">&#39;BoxOffice&#39;</span><span class="p">]]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">rateData</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Rated&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 
+<span class="c1">#barplots using average and sum of box office</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="p">[</span><span class="s1">&#39;BoxOffice&#39;</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Average Box Office by Rating&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Rating&#39;</span><span class="p">)</span>
@@ -3359,7 +3323,7 @@ that is returned so that we have a list of the key words.</p>
 </section>
 <section id="model-analysis-hypothesis-testing-ml-a-class-anchor-id-ml-a">
 <h3>Model: Analysis, Hypothesis Testing, &amp; ML  <a class="anchor" id="ml"></a><a class="headerlink" href="#model-analysis-hypothesis-testing-ml-a-class-anchor-id-ml-a" title="Permalink to this heading">#</a></h3>
-<p>In this section, we will use some of the insights we gained from our visuals to make some predictions using machine learning. During this section, more visuals will be made to gain even further information about the data.</p>
+<p>In the data visualizations above, we analyze the different relationships that features such as month and rating have on Box Office. Now that we have visualized and discussed these trends, we proceed to analyze how the features listed above and more impact public perception through imdbRating via machine learning techniques. We utilize multiple ML classification algorithms, and compare their key statistics to see which one bets classifies our dataset.</p>
 <p>Do you ever hear about the highest grossing box office movies, but wonder whether the audience genuinley enjoyed it?
 Or whether movie critics are actually reliable sources in determining public perception of movies?
 How about whether the month a movie releases has an impact on whether people like that movie or not?</p>
@@ -3367,7 +3331,8 @@ How about whether the month a movie releases has an impact on whether people lik
 <p>Because we are interested in applying a label as an output, we decided to use a classification model rather than a regression model, which is generally used for predicting a quantity. More information on the difference between these two types of models can be found <a class="reference external" href="https://machinelearningmastery.com/classification-versus-regression-in-machine-learning/">here</a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#all necessary imports</span>
+<span class="kn">import</span> <span class="nn">math</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span> 
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
@@ -3394,22 +3359,19 @@ How about whether the month a movie releases has an impact on whether people lik
 </div>
 </div>
 <p><b>Processing Data through One-Hot Encoding</b></p>
-<p>Before we explain one-hot encoding, it’s important to recognize what <a class="reference external" href="https://en.wikipedia.org/wiki/Categorical_variable">categorical data</a> is. In statistics, a categorical variable is a variable that can take on a number of possible values, each assigned to a specific group. In our project, a categorical variable could the genre or rating(PG-13, R, etc.) of the movie. The issue with this kind of data is that many machine learning algorithms cannot operate on labeled data directly; inputs and outputs must be numeric. This is where <a class="reference external" href="https://en.wikipedia.org/wiki/Categorical_variable">one-hot encoding</a> is useful. It allows us to represent categorical variables as numerical values in a model. The categorical parameters will prepare separate columns for each individual label. For example, whenever there is a comedy movie, the value will be 1 in the new “Comedy” column and 0s for all the other columns. Here is a link to more information on one-hot encoding: <a class="reference external" href="https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f">What is One Hot Encoding?</a></p>
-<p>For our data, there are problems beyond just categorical data that require processing. The genre labeling that is returned by the API lists some of the genres as a combination of multiple genres. There are many entries that look like “comedy, action.” Movies with this genre must be listed in the “comedy” and “action” columns as 1s in the processed table.
-Categorical variable
-In statistics, a categorical variable (also called qualitative variable) is a variable that can take on one of a limited, and usually fixed, number of possible values, assigning each individual or other unit of observation to a particular group or nominal category on the basis of some qualitative property. In computer science and some branches o…
-What is One Hot Encoding? Why and When Do You Have to Use it? | Hac…
-One hot encoding is a process by which categorical variables are converted into a form that could be provided to ML algorithms to do a better job in prediction.
-box office and month columns:</p>
+<p>Before we explain one-hot encoding, it’s important to recognize what <a class="reference external" href="https://en.wikipedia.org/wiki/Categorical_variable">categorical data</a> is. In statistics, a categorical variable is a variable that can take on a number of possible values, each assigned to a specific group. In our project, a categorical variable could the genre (Comedy, Action, etc.) or rating(PG-13, R, etc.) of the movie. The issue with this kind of data is that many machine learning algorithms cannot operate on labeled data directly, as inputs and outputs must be numeric. This is where <a class="reference external" href="https://en.wikipedia.org/wiki/Categorical_variable">one-hot encoding</a> is useful. It allows us to represent categorical variables as numerical values in a model. The categorical parameters will prepare separate columns for each individual label. For example, whenever there is a comedy movie, the value will be 1 in the new “Comedy” column and 0s for all the other columns. Here is a link to more information on one-hot encoding: <a class="reference external" href="https://hackernoon.com/what-is-one-hot-encoding-why-and-when-do-you-have-to-use-it-e3c6186d008f">What is One Hot Encoding?</a></p>
+<p>For our data, there are problems beyond just categorical data that require processing. The genre labeling that is returned by the API lists some of the genres as a combination of multiple genres. There are many entries that look like “comedy, action.” Movies with this genre must be listed in the “comedy” and “action” columns as 1s in the processed table. We do this by first extracting all the unique genres in the dataframe, making each a new column, and adding a 1 whenever a given movie has that genre in the list of genres or a 0 otherwise.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">all_generes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#create a dictionary with unique genres</span>
+<span class="n">all_generes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span> 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;Genre&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
     <span class="n">genre</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">genre</span><span class="p">:</span>
         <span class="n">b</span> <span class="o">=</span> <span class="n">g</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
         <span class="n">all_generes</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-        
+
+<span class="c1">#one-hot encoding</span>
 <span class="k">for</span> <span class="n">genre</span> <span class="ow">in</span> <span class="n">all_generes</span><span class="p">:</span>
      <span class="n">data</span><span class="p">[</span><span class="n">genre</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;Genre&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">genre</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
     
@@ -3417,13 +3379,14 @@ box office and month columns:</p>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;Rated&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
     <span class="n">all_ratings</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     
+<span class="c1">#one-hot encode the ratings</span>
 <span class="k">for</span> <span class="n">rat</span> <span class="ow">in</span> <span class="n">all_ratings</span><span class="p">:</span>
      <span class="n">data</span><span class="p">[</span><span class="n">rat</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;Rated&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">rat</span> <span class="o">==</span> <span class="n">x</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
         
 <span class="n">all_ratings</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">all_ratings</span><span class="p">)</span>
 <span class="n">all_generes</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">all_generes</span><span class="p">)</span>
 
-
+<span class="c1">#add columns</span>
 <span class="n">lst</span> <span class="o">=</span> <span class="n">all_ratings</span><span class="o">+</span> <span class="n">all_generes</span>  <span class="o">+</span><span class="p">[</span> <span class="s2">&quot;Budget&quot;</span><span class="p">,</span><span class="s2">&quot;BoxOffice&quot;</span><span class="p">,</span> <span class="s2">&quot;month&quot;</span><span class="p">,</span> <span class="s2">&quot;Metascore&quot;</span><span class="p">]</span>
 
 
@@ -3601,12 +3564,13 @@ box office and month columns:</p>
 </div>
 <section id="preliminary-exploration-of-data-for-the-model-a-class-anchor-id-preliminary-a">
 <h4>Preliminary Exploration of Data for the Model  <a class="anchor" id="preliminary"></a><a class="headerlink" href="#preliminary-exploration-of-data-for-the-model-a-class-anchor-id-preliminary-a" title="Permalink to this heading">#</a></h4>
-<p>We first begin with extrapolating the different features we will put into the model. From the data we explored above, we decided to explore this classification using Metascore, Budget, Box Office, month, genre, and rating (R, PG-13…) as features. While our dataframe contains other information such as actors, production company, and plot, we realize that it is simply impractical to include this information in our model as there are far too many actors and production companies that have been involved in the provided movies. We instead use this information in the movie recommender!</p>
-<p>First, we visualize which Ratings and which Genres have the most hits with the two pie charts below. We see that rated Rmovies have the highest percentage of hits, followed by PG-13. Additionally, we notice that Drama movies and Comedy movies have the highest percentage of hits, closely followed by Action and Adventure movies.</p>
+<p>We first begin with extrapolating the different features we will put into the model. From the data we explored above, we decided to explore this classification using Metascore, Budget, Box Office, month, genre, and rating (R, PG-13…) as features. While our dataframe contains other information such as actors, production company, and plot, we realize that it is simply impractical to include this information in our model as there are far too many actors and production companies that have been involved in the provided movies. We instead use this information for the movie recommender in the next section!</p>
+<p>First, we visualize which Ratings and which Genres have the most hits with the two pie charts below. We see that rated R movies have the highest percentage of hits, followed by PG-13. Additionally, we notice that Drama movies and Comedy movies have the highest percentage of hits, closely followed by Action and Adventure movies.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">hits</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;hit&quot;</span><span class="p">])</span>
+<span class="c1">#get the unique ratings</span>
 <span class="n">ratings</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;Rated&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ratings</span><span class="p">:</span>
     <span class="n">x</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;hit&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)])</span>
@@ -3617,7 +3581,7 @@ box office and month columns:</p>
 
 <span class="n">pal_</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="n">palette</span><span class="o">=</span><span class="s1">&#39;plasma_r&#39;</span><span class="p">,</span>
                               <span class="n">n_colors</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">ratings</span><span class="p">))</span><span class="o">.</span><span class="n">as_hex</span><span class="p">())</span>
-<span class="c1">#plot a pie chart</span>
+<span class="c1">#plot a pie chart for ratings by percentage</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">11</span><span class="p">})</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Percent</span><span class="p">,</span>
@@ -3647,7 +3611,7 @@ box office and month columns:</p>
 
 <span class="n">pal_</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="n">palette</span><span class="o">=</span><span class="s1">&#39;plasma_r&#39;</span><span class="p">,</span>
                               <span class="n">n_colors</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">ratings</span><span class="p">))</span><span class="o">.</span><span class="n">as_hex</span><span class="p">())</span>
-<span class="c1">#plot a pie chart</span>
+<span class="c1">#plot a pie chart for genre by percentage</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Percent</span><span class="p">,</span>
@@ -3673,11 +3637,13 @@ The feature with the largest importance is Metascore, followed by Box Office, Bu
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tot</span> <span class="o">=</span> <span class="n">lst</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;hit&quot;</span><span class="p">]</span> 
+<span class="c1">#drop columns</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="n">tot</span><span class="p">)</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">lst</span><span class="p">]</span>
 <span class="n">X</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
 
+<span class="c1">#use random forest classifier to view feature importance</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;hit&quot;</span><span class="p">]</span>
 <span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="mi">150</span><span class="p">)</span> 
 <span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> 
@@ -3686,7 +3652,7 @@ The feature with the largest importance is Metascore, followed by Box Office, Bu
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Importance of Features using RFC&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Feature Importance&quot;</span><span class="p">)</span>
 
-
+<span class="c1">#sort by most important</span>
 <span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">sort</span><span class="p">]</span>
 <span class="n">rf</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">[</span><span class="n">sort</span><span class="p">]</span>
 <span class="n">all_features</span> <span class="o">=</span> <span class="p">{}</span>
@@ -3696,7 +3662,7 @@ The feature with the largest importance is Metascore, followed by Box Office, Bu
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/0a82e867d108523217fd3f820628443703bc62fb48e5194b6733492fc931ae5f.png" src="_images/0a82e867d108523217fd3f820628443703bc62fb48e5194b6733492fc931ae5f.png" />
+<img alt="_images/c3409a0a86f62edea05eadb98753e28bfdbeddb49ea7ab3d30c4af97ebe15079.png" src="_images/c3409a0a86f62edea05eadb98753e28bfdbeddb49ea7ab3d30c4af97ebe15079.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -3719,7 +3685,7 @@ The feature with the largest importance is Metascore, followed by Box Office, Bu
     <span class="k">del</span> <span class="n">all_features</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 <span class="n">all_features</span>
 
-
+<span class="c1">#plot feature importance</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_features</span><span class="p">)),</span> <span class="nb">list</span><span class="p">(</span><span class="n">all_features</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_features</span><span class="p">)),</span> <span class="nb">list</span><span class="p">(</span><span class="n">all_features</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span> <span class="o">=</span> <span class="mi">45</span><span class="p">,</span> <span class="n">ha</span> <span class="o">=</span> <span class="s1">&#39;right&#39;</span><span class="p">)</span>
@@ -3732,7 +3698,7 @@ The feature with the largest importance is Metascore, followed by Box Office, Bu
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;Feature Importance&#39;)
 </pre></div>
 </div>
-<img alt="_images/5027457e7cc64ebfab34036e9d53929ec9a57404f559f2023563dab6686e0f73.png" src="_images/5027457e7cc64ebfab34036e9d53929ec9a57404f559f2023563dab6686e0f73.png" />
+<img alt="_images/21662966de1b433967586b906b7d95e3ab249a16a712b18e15e714df31bdc254.png" src="_images/21662966de1b433967586b906b7d95e3ab249a16a712b18e15e714df31bdc254.png" />
 </div>
 </div>
 <p>Now that we confirmed that the features we hypothesized would have an impact on movie success, we run 3 different classification algorithms to determine whether we can correctly predict whether a movie would be a hit or not. We first split 80% of our data into a training set, and allocate the remaining 20 as the testing set. To determine which of the classification algorithms perform the best, we compare the <a class="reference external" href="https://saifmorahman.medium.com/interpreting-accuracy-precision-recall-and-f1-score-metrics-46bba7f00b2c#:~:text=The%20accuracy%20metric%20is%20the,total%20number%20of%20data%20points.">accuracy score</a>, which takes the total number of correctly predicted data points and divides it by the total number of data points. Another metric we use in determining the validity of the models is the <a class="reference external" href="https://saifmorahman.medium.com/interpreting-accuracy-precision-recall-and-f1-score-metrics-46bba7f00b2c#:~:text=The%20accuracy%20metric%20is%20the,total%20number%20of%20data%20points.">f1 score</a>, which takes the weighted average of precision and recall. It has more of a focus on false negatives and false positives. We additionally display the confusion matrix which displays the number of correct predictions, the number of Type 1 error predictions, and the number Type 2 error predictions. The formulas for both metrics and a description of the confusion matrix are detailed below.
@@ -3758,7 +3724,8 @@ The feature with the largest importance is Metascore, followed by Box Office, Bu
 <p>Our accuracy score for the KNN model is ~ 70.80% which for a real-world data set is very good. According to the <a class="reference external" href="https://stephenallwright.com/good-accuracy-score/#:~:text=There%20is%20a%20general%20rule,60%25%20and%2070%25%20%2D%20OK">data science community</a> an accuracy score of above ~70% is considered good. However, the f1 score, ~67.89%, is realtively low for the KNN model, and the confusion matrix shows clarity as to why. The model has a higher amount of false positives, perhaps because there are more non-hit movies than hit movies.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sc_X</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#use the standard scalar and predict using KNN</span>
+<span class="n">sc_X</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span> 
 <span class="n">X_train</span> <span class="o">=</span> <span class="n">sc_X</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span> 
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">sc_X</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 <span class="n">n</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
@@ -3790,9 +3757,11 @@ Confusion Matrix:
 <p>Our accuracy score for the SVC model is ~78.85% which is better much better than our KNN classifier. Additionally, the f1 score is also very high for the SCV model, which is even higher than the accuracy score. This means the model has a higher weighted average of precision and recall. As shown by the confusion matrix, the model only has ~39 False Negatives and ~24 False Positives.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">svm_model</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">()</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#use svm model</span>
+<span class="n">svm_model</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">()</span> 
 <span class="n">svm_model</span> <span class="o">=</span> <span class="n">svm_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> 
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">svm_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> 
+<span class="c1">#print accuracy score based on test and prediction</span>
 <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span> 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy Score: &quot;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
@@ -3822,10 +3791,12 @@ Confusion Matrix:
 <span class="n">f1</span> <span class="o">=</span> <span class="mi">0</span> 
 <span class="n">n</span> <span class="o">=</span> <span class="mi">15</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="c1">#train test split</span>
     <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
     <span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
     <span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="c1">#print out accuracy score</span>
     <span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
     <span class="n">f1</span> <span class="o">=</span> <span class="n">f1</span> <span class="o">+</span>  <span class="n">f1_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
     <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">accuracy</span> 
@@ -3835,8 +3806,8 @@ Confusion Matrix:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy:  0.802013422818792
-F1 Score:  0.791514463674304
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy:  0.8102908277404921
+F1 Score:  0.794568509556114
 </pre></div>
 </div>
 </div>
@@ -3849,7 +3820,8 @@ F1 Score:  0.791514463674304
 <p>Our accuracy score for the Logistic Regression Classification is ~56.71%, which is moderately high for our data. The f1 score is similar, at about 57.7%. This shows that the Logistic Regression Classification is the worst classifier out of all the ones we tested, as it has the lowest accuracy score and the lowest f1 score. Additionally, the confusion matrix shows that it misclassifed ~89 as False Positives and ~40 as False Negatives.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lg_model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#create logistic regression model and fit on the data</span>
+<span class="n">lg_model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span> 
 <span class="n">lg_model</span> <span class="o">=</span> <span class="n">lg_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> 
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">lg_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> 
 <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
@@ -3861,19 +3833,20 @@ F1 Score:  0.791514463674304
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy Score:  0.5167785234899329
-F1 Score:  0.5714285714285714
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy Score:  0.5067114093959731
+F1 Score:  0.5180327868852459
 Confusion Matrix: 
- [[58 94]
- [50 96]]
+ [[ 72 110]
+ [ 37  79]]
 </pre></div>
 </div>
 </div>
 </div>
+<p>Now that we’ve shown you how different classification algorithms work to predict a hit movie, lets switch gears to talk about building a movie recommendation system using <a class="reference external" href="https://aws.amazon.com/what-is/nlp/#:~:text=Natural%20language%20processing%20(NLP)%20is,manipulate%2C%20and%20comprehend%20human%20language.">Natural Lanuguage Processing</a>.</p>
 </section>
 <section id="movie-recommender-a-class-anchor-id-movierec-a">
 <h4>Movie Recommender  <a class="anchor" id="movieRec"></a><a class="headerlink" href="#movie-recommender-a-class-anchor-id-movierec-a" title="Permalink to this heading">#</a></h4>
-<p>In this section, we will construct a method to find out which movie the user should watch after they have inputed a movie that they like.</p>
+<p>In this section, we will construct a method to find out which movie the user should watch after they have inputed a movie that they like. Our dataset contains various movies with their corresponding details such as plot, actors, and directors. However, this information may not be the most useful to a user seeking recommendations. Therefore, in the first part of our movie recommender system, we aim to provide the user with a way to find movies similar to the one they already enjoy. This basic form of recommendation is similar to how popular streaming sites like Netflix, HBO, and Hulu recommend movies to their users. Our approach involves selecting a movie from our database and using cosine similarity to compare its plot and genre with other movies in the dataset to identify similar movies that the user may like.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
@@ -3884,129 +3857,159 @@ Confusion Matrix:
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">combine_info</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
-    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;Plot&quot;</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;Genre&quot;</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#function that combines plot/genre</span>
+<span class="k">def</span> <span class="nf">combine_info</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;Plot&quot;</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;Genre&quot;</span><span class="p">])</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">))</span>
+    <span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">))</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">filtered_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">]</span>
+    <span class="n">filtered_text</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">filtered_words</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">filtered_text</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">data2</span><span class="p">[</span><span class="s2">&quot;Plot&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-
+<span class="c1">#try out on Insideous</span>
 <span class="n">data2</span><span class="p">[</span><span class="s2">&quot;combined&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data2</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">combine_info</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">data2</span><span class="p">[</span><span class="n">data2</span><span class="p">[</span><span class="s1">&#39;Title&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;A Quiet Place Part II&#39;</span><span class="p">]</span>
-<span class="n">data2</span> <span class="o">=</span> <span class="n">data2</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;index&#39;</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">data2</span><span class="p">[</span><span class="n">data2</span><span class="p">[</span><span class="s1">&#39;Title&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Insidious&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-</pre></div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>index</th>
+      <th>Title</th>
+      <th>Genre</th>
+      <th>Actors</th>
+      <th>Director</th>
+      <th>Plot</th>
+      <th>Country</th>
+      <th>Language</th>
+      <th>imdbRating</th>
+      <th>...</th>
+      <th>imdbVotes</th>
+      <th>Metascore</th>
+      <th>month</th>
+      <th>day</th>
+      <th>year</th>
+      <th>Production Company</th>
+      <th>Rated</th>
+      <th>Budget</th>
+      <th>Keywords</th>
+      <th>combined</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>44</th>
+      <td>44</td>
+      <td>44</td>
+      <td>Insidious</td>
+      <td>Horror, Mystery, Thriller</td>
+      <td>Patrick Wilson, Rose Byrne, Ty Simpkins</td>
+      <td>James Wan</td>
+      <td>A family looks to prevent evil spirits from tr...</td>
+      <td>United States, Canada</td>
+      <td>English</td>
+      <td>6.8</td>
+      <td>...</td>
+      <td>317,623</td>
+      <td>52.0</td>
+      <td>april</td>
+      <td>1.0</td>
+      <td>2011</td>
+      <td>FilmDistrict / Haunted Movies / Stage 6 Films ...</td>
+      <td>PG-13</td>
+      <td>1500000.0</td>
+      <td>['medium', 'evil spirit', 'house warming', 'af...</td>
+      <td>family looks prevent evil spirits trapping com...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 21 columns</p>
+</div></div></div>
 </div>
-</div>
-</div>
+<p>This code enhances our movie dataset by adding a new ‘combined’ column to ‘data’ that concatenates the ‘Plot’ and ‘Genre’ columns for each row. To improve the accuracy of our similarity score, we utilize the NLTK library to remove punctuation and stopwords from the combined text. Our aim is to identify movies that are similar to Insidious; thus, we start by selecting the row that corresponds to this movie.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tfidf</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">max_features</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#tfid vectorizer to calculate scores</span>
+<span class="n">tfidf</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">max_features</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
 <span class="n">feature</span> <span class="o">=</span> <span class="n">tfidf</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data2</span><span class="p">[</span><span class="s2">&quot;combined&quot;</span><span class="p">])</span>
 <span class="n">movie_title</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data2</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">data2</span><span class="p">[</span><span class="s2">&quot;Title&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 </div>
+<p>This code uses TfidfVectorizer to calculate the TF-IDF scores for the ‘combined’ column (which contains the concatenated plot and genre for each movie) of the movie dataset ‘data’. The resulting feature matrix is assigned to ‘feature’. We then create a new series with just the indexes of the movies as well as the title for retrieving the similar titles later on.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">idx</span> <span class="o">=</span> <span class="n">movie_title</span><span class="p">[</span><span class="s2">&quot;A Quiet Place Part II&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">idx</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#cosine similary using Insideous</span>
+<span class="n">idx</span> <span class="o">=</span> <span class="n">movie_title</span><span class="p">[</span><span class="s2">&quot;Insidious&quot;</span><span class="p">]</span>
 <span class="n">vector</span> <span class="o">=</span> <span class="n">feature</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
 <span class="n">reccomendations</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">vector</span><span class="p">,</span> <span class="n">feature</span><span class="p">)</span>
 <span class="n">reccomendations</span> <span class="o">=</span> <span class="n">reccomendations</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2506
-</pre></div>
 </div>
-</div>
-</div>
+<p>This code generates movie recommendations by comparing the feature vector for Insidious to the feature vectors of all other movies in the dataset using cosine similarity. It then plots the resulting similarity scores.
+Specifically, the code finds the index of the movie Insidious and retrieves its feature vector from the Tfidf-transformed data. It then calculates the cosine similarity between the movie and all other movies in the dataset, generating an array of similarity scores.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">reccomendations</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#plot similarity graph</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">reccomendations</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;navy&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Movie Recommendations for &#39;Insidious&#39;&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Movie Index&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Similarity Score&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1000x600 with 0 Axes&gt;
-</pre></div>
-</div>
-<img alt="_images/b37f22329b444d48a976fd60c43825635a18fd2bafff23fb47da3ed8c0108539.png" src="_images/b37f22329b444d48a976fd60c43825635a18fd2bafff23fb47da3ed8c0108539.png" />
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1000x600 with 0 Axes&gt;
-</pre></div>
+<img alt="_images/4453e413555349d1a8cfa7d655aca4324ff46fba396ca6cb46f8354782626cda.png" src="_images/4453e413555349d1a8cfa7d655aca4324ff46fba396ca6cb46f8354782626cda.png" />
 </div>
 </div>
-</div>
+<p>The resulting plot of the similarity scores generated by the code shows that the movie with a similarity score of 1.0 is the input movie, Insidious. This indicates that the algorithm has successfully identified the movie as being identical to itself. If we look at the rest of the similarity scores on the plot, we can see that the next most similar movie to Insidious has a score of 0.3. This suggests that the algorithm has identified a movie with similar genre and plot elements to Insidious, although not as closely related as the movie itself.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">-</span><span class="n">reccomendations</span><span class="p">)</span><span class="o">.</span><span class="n">argsort</span><span class="p">()</span>
-<span class="n">final_recs</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">reccomendations</span><span class="p">)</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[</span><span class="mi">1</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
-<span class="n">final_recs</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#list out the top 5 recs</span>
+<span class="p">(</span><span class="o">-</span><span class="n">reccomendations</span><span class="p">)</span><span class="o">.</span><span class="n">argsort</span><span class="p">()</span>
+<span class="n">final_recs</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">reccomendations</span><span class="p">)</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[:</span><span class="mi">5</span><span class="p">]</span>
 <span class="n">data2</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">final_recs</span><span class="p">][</span><span class="s2">&quot;Title&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>545                                G.I. Joe: Retaliation
-320                                           Prometheus
-836                                             Godzilla
-1743                                       The Domestics
-1997                           Spider-Man: Far From Home
-902                                   As Above, So Below
-2407                                          Wrong Turn
-504     The Haunting in Connecticut 2: Ghosts of Georgia
-2259                                               Tenet
-518                                           Dark Skies
-1937                                         The Silence
-1212                                     Eddie the Eagle
-2047                                           Bloodline
-1774                                             The Meg
-318                                          Piranha 3DD
-610                                      This Is the End
-1602                                     Pitch Perfect 3
-2323                            Tremors: Shrieker Island
-2084                                        Doctor Sleep
-1124                      Maze Runner: The Scorch Trials
-1311                                             Snowden
-312                                    Chernobyl Diaries
-1560                            Boo 2! A Madea Halloween
-2110                             Jumanji: The Next Level
-2088                                              Midway
-1226                  Batman v Superman: Dawn of Justice
-1196                                     Kung Fu Panda 3
-1767                                          Extinction
-2227                                               Relic
-2460                                   Godzilla vs. Kong
-685                                 Insidious: Chapter 2
-2715                                             Encanto
-1017                                     Out of the Dark
-1381                    Resident Evil: The Final Chapter
-1091                                           Self/Less
-1855                           Ralph Breaks the Internet
-1948                                          Fast Color
-104                                      Horrible Bosses
-1888                                      After Darkness
-1135                                          Steve Jobs
-1456                    King Arthur: Legend of the Sword
-251                                         Silent House
-2069                              Zombieland: Double Tap
-2149                                            Downhill
-301                                           Battleship
-412                                             Sinister
-463                                     Zero Dark Thirty
-768                                          Android Cop
-639                                              V/H/S/2
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>44                  Insidious
+685      Insidious: Chapter 2
+165     Paranormal Activity 3
+2155       Brahms: The Boy II
+1792      The Little Stranger
 Name: Title, dtype: object
 </pre></div>
 </div>
 </div>
 </div>
+<p>Finally, the code identifies the movies with the highest similarity scores by sorting the similarity score array. The top five movies with the most similar genre and plot elements to Insidious are then listed.</p>
+<p>Overall, while cosine similarity is a useful metric to identify similarities between movies based on their plot and genre, it has its limitations. Movies may have similar plots and genres but differ in other aspects such as director, actors, release date, and language, among others. Incorporating these factors could lead to a more accurate similarity score and ultimately better recommendations.</p>
 </section>
 <section id="movie-recommender-ii-a-class-anchor-id-movierec2-a">
 <h4>Movie Recommender II  <a class="anchor" id="movieRec2"></a><a class="headerlink" href="#movie-recommender-ii-a-class-anchor-id-movierec2-a" title="Permalink to this heading">#</a></h4>
@@ -4020,7 +4023,8 @@ Name: Title, dtype: object
 <p>Generally, the more conditionals you add to Xyz = P((s at time t) = y|(s at time t-1) = z), the more accurate your predictions will be. Therefore, we plan to enhance our model by adding one more conditional or creating a “Second Order Markov Model” by adding one more, so Xyza = P(st = a| st-1 = z, st-2 = y).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#imports for this section</span>
+<span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">nltk</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -4039,6 +4043,7 @@ Name: Title, dtype: object
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
 <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
 
+<span class="c1">#request the plot of the avengers film</span>
 <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://en.wikipedia.org/wiki/The_Avengers_(2012_film)&quot;</span><span class="p">)</span>
 <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
 <span class="n">txt</span> <span class="o">=</span> <span class="p">[</span><span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">getText</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\&#39;</span><span class="s2">&#39;&quot;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">)]</span>
@@ -4143,6 +4148,7 @@ Name: Title, dtype: object
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
+<span class="c1">#generate random word</span>
 <span class="k">def</span> <span class="nf">random_word</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">t</span><span class="p">,</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -4156,7 +4162,8 @@ Name: Title, dtype: object
 <p>The  function takes a dictionary of probabilities and returns a word based on a random sample. It iterates over the items in the dictionary, keeping a cumulative sum of their probabilities. If the random number is less than the cumulative sum, it returns the corresponding word. If the loop completes without finding a word, it raises a ValueError.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_summary</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#function for creating the summary</span>
+<span class="k">def</span> <span class="nf">create_summary</span><span class="p">():</span>
     <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span> <span class="c1"># generate 4 lines</span>
         <span class="n">sentence</span> <span class="o">=</span> <span class="p">[]</span>
@@ -4186,7 +4193,8 @@ Name: Title, dtype: object
 <p>In this function, a list of 4 sentences is generated using a first-order Markov chain. The initial word of each sentence is always “The”, and subsequent words are chosen probabilistically based on the previous word in the chain using the random_word function. The process continues until the word “FINAL” is generated, at which point the sentence is complete. The resulting sentences are returned as a list.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample_text</span> <span class="o">=</span> <span class="n">create_summary</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#test cases</span>
+<span class="n">sample_text</span> <span class="o">=</span> <span class="n">create_summary</span><span class="p">()</span>
 <span class="n">sample_text</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sample_text</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -4202,7 +4210,7 @@ Name: Title, dtype: object
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Generated Text: 
-rogers stark and rogers work to restart the damaged engine and thor attempts to stop the hulks rampage romanoff knocks barton unconscious breaking lokis mind control loki escapes after killing coulson and fury uses coulsons death to motivate the avengers become divided over how to approach loki and the stress causes banner to transform into the hulk saves him while romanoff uses lokis scepter to close the wormhole in the aftermath thor returns with loki and the stress causes banner to transform into the hulk saves him while romanoff uses lokis scepter can shut down the generator furys superiors from the world security council attempt to end the invasion by launching a nuclear missile at midtown manhattan stark intercepts the missile detonates destroying the chitauri the hulk beats loki into submission romanoff makes her way to the chitauri mothership and disabling their forces on earth starks suit loses power and he goes into freefall but the hulk saves him while romanoff uses lokis scepter can shut down the generator where selvig freed from lokis mind control loki escapes after killing coulson and fury uses coulsons death to motivate the avengers battle the chitauri mothership and disabling their forces on earth starks suit loses power and he goes into freefall but the hulk saves him while romanoff uses lokis scepter to close the wormhole toward the chitauri in exchange for retrieving the tesseractc a powerful energy source of unknown potential the other promises loki an army with which he can subjugate earth nick fury director of the espionage agency shield arrives at a remote research facility where physicist dr erik selvig is leading a team loki uses the tesseract to asgard where loki will face their justice rogers stark romanoff barton thor and the revelation that shield plans to harness the tesseract and a wormhole above stark tower to the chitauri mothership and disabling their forces on earth starks suit loses power and he goes into freefall but the hulk saves him while romanoff uses lokis scepter can shut down the generator furys superiors from the world security council attempt to end the invasion by launching a nuclear missile at midtown manhattan stark intercepts the missile detonates destroying the chitauri mothership and disabling their forces on earth starks suit loses power and he goes into freefall but the hulk saves him while romanoff uses lokis scepter to enslave selvig and other agents including clint barton to aid him in response fury reactivates the avengers initiative agent natasha romanoff heads to kolkata to recruit dr bruce banner to transform into the hulk saves him while romanoff uses lokis scepter to close the wormhole toward the chitauri the hulk stark and rogers work to restart the damaged engine and thor attempts to stop the hulks rampage romanoff knocks barton unconscious breaking lokis mind control loki escapes after killing coulson and fury uses coulsons death to motivate the avengers become divided over how to approach loki and the revelation that shield plans to harness the tesseract and uses his scepter to enslave selvig and other agents including clint barton to aid him in response fury reactivates the avengers battle the chitauri fleet the missile and takes it through the wormhole toward the chitauri fleet the missile detonates destroying the chitauri fleet the missile detonates destroying the chitauri the hulk stark and rogers work to restart the damaged engine and thor attempts to stop the hulks rampage romanoff knocks barton unconscious breaking lokis mind control loki escapes after killing coulson and fury uses coulsons death to motivate the avengers into working as a team experimenting on the tesseract to develop powerful weapons as a team loki uses the tesseract suddenly activates and opens a wormhole allowing loki to reach earth loki steals the iridium needed to stabilize the tesseracts power leading to a confrontation with rogers stark romanoff barton thor and the revelation that shield plans to harness the tesseract through its gamma radiation emissions fury approaches steve rogers to retrieve the tesseract and agent phil coulson visits tony stark to have him check selvigs research loki is in stuttgart where barton steals the iridium needed to stabilize the tesseracts power leading to a confrontation with rogers stark romanoff barton thor and the tesseract and agent phil coulson visits tony stark to have him check selvigs research loki is taken to shields flying aircraft carrier the helicarrier where he is imprisoned
+the asgardian loki encounters the other promises loki an army with which he can subjugate earth nick fury director of the espionage agency shield arrives at a remote research facility where physicist dr erik selvig is leading a team experimenting on the tesseract and uses his scepter to enslave selvig and other agents including clint barton to aid him in response fury reactivates the avengers initiative agent natasha romanoff heads to kolkata to recruit dr bruce banner to transform into the hulk rally in defense of new york city and together the avengers become divided over how to approach loki and the tesseract and a wormhole allowing loki to reach earth loki steals the tesseract through its gamma radiation emissions fury approaches steve rogers to retrieve the tesseract to develop powerful weapons as a team experimenting on the tesseract and uses his scepter to enslave selvig and other agents including clint barton to aid him the asgardian loki encounters the other the leader of an extraterrestrial race known as the chitauri in exchange for retrieving the tesseractc a powerful energy source of unknown potential the other promises loki an army with which he can subjugate earth nick fury director of the espionage agency shield arrives at a remote research facility where physicist dr erik selvig is leading a team experimenting on the tesseract the tesseract and uses his scepter to close the wormhole in the aftermath thor returns with loki and the tesseract to asgard stark and rogers intervene and loki is taken to shields flying aircraft carrier the helicarrier where he is imprisoned the avengers become divided over how to approach loki and the tesseract through its gamma radiation emissions fury approaches steve rogers to retrieve the tesseract to asgard stark and rogers intervene and loki is in stuttgart where barton steals the tesseract through its gamma radiation emissions fury approaches steve rogers to retrieve the tesseract and agent phil coulson visits tony stark to have him check selvigs research loki is in stuttgart where barton steals the tesseract suddenly activates and opens a wormhole above stark tower to the generator where selvig freed from lokis mind control reveals that lokis scepter can shut down the generator where selvig freed from lokis mind control loki escapes after killing coulson and fury uses coulsons death to motivate the avengers become divided over how to approach loki and the revelation that shield plans to harness the tesseract suddenly activates and opens a wormhole allowing loki to reach earth loki steals the iridium needed to stabilize the tesseracts power leading to a confrontation with rogers stark romanoff barton thor and the hulk beats loki into submission romanoff makes her way to the chitauri fleet in space launching his invasion
 Original Text: 
 The Asgardian Loki encounters the Other, the leader of an extraterrestrial race known as the Chitauri. In exchange for retrieving the Tesseract,[c] a powerful energy source of unknown potential, the Other promises Loki an army with which he can subjugate Earth. Nick Fury, director of the espionage agency S.H.I.E.L.D., arrives at a remote research facility, where physicist Dr. Erik Selvig is leading a team experimenting on the Tesseract. The Tesseract suddenly activates and opens a wormhole, allowing Loki to reach Earth. Loki steals the Tesseract and uses his scepter to enslave Selvig and other agents, including Clint Barton, to aid him.
  In response, Fury reactivates the &quot;Avengers Initiative&quot;. Agent Natasha Romanoff heads to Kolkata to recruit Dr. Bruce Banner to trace the Tesseract through its gamma radiation emissions. Fury approaches Steve Rogers to retrieve the Tesseract, and Agent Phil Coulson visits Tony Stark to have him check Selvig&#39;s research. Loki is in Stuttgart, where Barton steals the iridium needed to stabilize the Tesseract&#39;s power, leading to a confrontation with Rogers, Stark, and Romanoff that ends with Loki&#39;s surrender. While Loki gets escorted to S.H.I.E.L.D., his adoptive brother Thor arrives and frees him, hoping to convince him to abandon his plan and return to Asgard. Stark and Rogers intervene and Loki is taken to S.H.I.E.L.D.&#39;s flying aircraft carrier, the Helicarrier, where he is imprisoned.
@@ -4217,6 +4225,7 @@ The Asgardian Loki encounters the Other, the leader of an extraterrestrial race 
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
 
+<span class="c1">#uses the sample_text and title to plot word frequency</span>
 <span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="n">sample_text</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
     <span class="n">sentence_words</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">words</span> <span class="ow">in</span> <span class="n">sample_text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">):</span>
@@ -4244,7 +4253,7 @@ The Asgardian Loki encounters the Other, the leader of an extraterrestrial race 
 </div>
 <div class="cell_output docutils container">
 <img alt="_images/fff463a3cbb9a377a8c9299cc0d324fc77a2f60d158e96ad402da06ed89ade21.png" src="_images/fff463a3cbb9a377a8c9299cc0d324fc77a2f60d158e96ad402da06ed89ade21.png" />
-<img alt="_images/187891584956b9113f6b715aaa3564b97323272300677316a0d06c86d9ed80f5.png" src="_images/187891584956b9113f6b715aaa3564b97323272300677316a0d06c86d9ed80f5.png" />
+<img alt="_images/0845e117d8796439d5ad4c4e2e5c60187ba78a4729fc6a6c401895bd25687289.png" src="_images/0845e117d8796439d5ad4c4e2e5c60187ba78a4729fc6a6c401895bd25687289.png" />
 </div>
 </div>
 <p>As seen when we display the words in the generated paragraph, “the”, “to”, “and”, “a” are among the most common words in both summaries and thus might skew the similarity results.</p>
@@ -4257,6 +4266,7 @@ The Asgardian Loki encounters the Other, the leader of an extraterrestrial race 
 <span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
 <span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s2">&quot;english&quot;</span><span class="p">))</span>
 
+<span class="c1">#cleans the data so that words such as &quot;the&quot; are not used</span>
 <span class="k">def</span> <span class="nf">cleaning2</span><span class="p">(</span><span class="n">two</span><span class="p">):</span>
     <span class="n">final_descrip</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">descrip</span> <span class="ow">in</span> <span class="n">two</span><span class="p">:</span>
@@ -4291,7 +4301,7 @@ The Asgardian Loki encounters the Other, the leader of an extraterrestrial race 
 </div>
 <div class="cell_output docutils container">
 <img alt="_images/80cb3872fe804f5ebf665c939379540df7aa421db7c1629eaae527de80488cec.png" src="_images/80cb3872fe804f5ebf665c939379540df7aa421db7c1629eaae527de80488cec.png" />
-<img alt="_images/2f0936d99e7bdea5ed9099ccf64ee1c5867e034401b0d05dac35f928164a043c.png" src="_images/2f0936d99e7bdea5ed9099ccf64ee1c5867e034401b0d05dac35f928164a043c.png" />
+<img alt="_images/7f42917de1ea80c9d093933eaa38b88eb1d338dc76a0f5135eced8d7c853cd36.png" src="_images/7f42917de1ea80c9d093933eaa38b88eb1d338dc76a0f5135eced8d7c853cd36.png" />
 </div>
 </div>
 <p>Here we call out cleaning function on both the original text as well as the generated text to get rid of stopwords and punctation that might affect the cosine similarity process. Now the cosine similarity will be able to more accurately compare the similarity between both texts.</p>
@@ -4305,19 +4315,22 @@ The Asgardian Loki encounters the Other, the leader of an extraterrestrial race 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8398694708765687
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8078183532498256
 </pre></div>
 </div>
 </div>
 </div>
 <p>A cosine similarity score of ~0.80 indicates a relatively high level of similarity between the summary of the movie obtained online and the summary generated using Markov models.However, it is to be noted that the generated text isn’t the same every time it is ran. In fact, after running this multiple times the lowest similartiy I got for the same text was 0.53.</p>
 <p>Thus, it can be said that there is a lot more that goes into text generated. Markov Models work by picking the sequence of words that result in the highest probability. Because of this, if one were to read the generated text, some sentences are not coherent and because of this some sentences dont make since. However, Markov Models serve as a great way to introduce the idea of text generation.</p>
-<p>The cosine similarity score of around 0.80 indicates that there is a relatively high level of similarity between the movie summary obtained online and the summary generated using Markov models. However, it should be noted that the generated text is not the same every time it is run. In fact, when the same text was run multiple times, the lowest similarity score obtained was 0.53. This suggests that text generation involves a lot more than just using Markov models.</p>
-<p>Markov models generate text by selecting the sequence of words that have the highest probability. As a result, some sentences in the generated text may not be coherent, and some may not make sense when read. Nevertheless, Markov models provide a useful way to introduce the concept of text generation.</p>
 </section>
 </section>
 <section id="interpretation-insight-policy-decision-a-class-anchor-id-conclusion-a">
 <h3>Interpretation: Insight &amp; Policy Decision  <a class="anchor" id="conclusion"></a><a class="headerlink" href="#interpretation-insight-policy-decision-a-class-anchor-id-conclusion-a" title="Permalink to this heading">#</a></h3>
+<p>Ultimately, we aimed to classify which movies were a “hit” based off their imdbRating, and were quite successful. In comparing the four different classifiers we used, RandomForestClassification had the highest accuracy score with above 81%. Additionally, the f1 score for the RandomForestClassification was the highest out of all the models, thus implying it had a high precision rate as well. In the future we hope to be able to add more features to our classifier, and fine tune our parameters to achieve a higher accuracy score.</p>
+<p>The recommender has identified movies with the highest similarity using cosine similarity. The movies with the most similar plot/genre are shown to the user. Something to think about is that movies may have similar plots and genres but differ in other aspects such as director, actors, release date, and language, among others. Incorporating these factors could lead to a more accurate similarity score and ultimately better recommendations.</p>
+<p>As for the recommender part II, The cosine similarity score of around 0.80 indicates that there is a relatively high level of similarity between the movie summary obtained online and the summary generated using Markov models. However, it should be noted that the generated text is not the same every time it is run. In fact, when the same text was run multiple times, the lowest similarity score obtained was 0.53. This suggests that text generation involves a lot more than just using Markov models.</p>
+<p>Markov models generate text by selecting the sequence of words that have the highest probability. As a result, some sentences in the generated text may not be coherent, and some may not make sense when read. Nevertheless, Markov models provide a useful way to introduce the concept of text generation.</p>
+<p>Now, we’ve classified whether a movie will be well recieved or now and we offer you our very own (free of cost) movie recommender for you can keep watching movies similar to the ones you love and walk you through how you can build one of your own!</p>
 </section>
 </section>
 </section>
